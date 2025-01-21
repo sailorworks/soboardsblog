@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SoboardsLogo from "./SoBoardsLogo"; // Adjust the path if needed
 
 export default function Footer() {
   const footerLinks = [
@@ -30,8 +31,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="space-y-6">
-            <Link href="/" className="text-2xl font-bold">
-              R
+            <Link href="/" aria-label="Soboards Home">
+              <SoboardsLogo />
             </Link>
             <p className="text-sm max-w-xs">
               Transforming outdoor advertising through innovative AI solutions

@@ -22,7 +22,7 @@ const FeatureSection = () => {
   ];
 
   return (
-    <section className="py-16">
+    <section id="features" className="py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {features.map((item, index) => (

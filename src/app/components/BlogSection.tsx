@@ -44,7 +44,7 @@ const BlogSection = () => {
   const regularPosts = blogs.filter((blog) => !blog.featured);
 
   return (
-    <section className="py-16">
+    <section id="blog" className="py-16">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-serif mb-12 text-center">Blogs</h2>
 

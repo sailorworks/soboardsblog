@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -16,8 +17,22 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "SoBoards - Grow your outdoor advertising business",
-  description: "Grow your outdoor advertising business with SoBoards",
+  title: "Grow your outdoor advertising business with soboards",
+  description:
+    "Innovating, designing, and enabling AI for established OOH players.",
+  keywords:
+    "outdoor advertising mumbai, billboard advertising mumbai, hoarding advertising mumbai, digital billboard mumbai, outdoor media companies mumbai, outdoor advertising agencies mumbai suburbs, navi mumbai outdoor advertising, andheri billboard advertising, bandra outdoor advertising",
+  authors: [{ name: "SoBoards" }],
+  creator: "SoBoards",
+  publisher: "SoBoards",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -27,17 +42,37 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
   manifest: "/site.webmanifest",
-  // Optional: Add theme color for mobile browsers
   themeColor: "#ffffff",
-  // Optional: Add Open Graph image for social sharing
   openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://soboards.com",
+    siteName: "SoBoards",
+    title: "SoBoards - Grow your outdoor advertising business with soboards",
+    description:
+      "Innovating, designing, and enabling AI for established OOH players.",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://soboards.com/og-image.png",
         width: 1200,
         height: 630,
+        alt: "SoBoards - Outdoor Advertising Solutions",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SoBoards - Premium Outdoor Advertising Solutions in Mumbai",
+    description:
+      "Transform your business visibility with SoBoards - Mumbai's leading outdoor advertising platform.",
+    images: ["https://soboards.com/og-image.png"],
+    creator: "@soboards",
+  },
+  alternates: {
+    canonical: "https://soboards.com",
+  },
+  verification: {
+    google: "your-google-verification-code", // Add your Google Search Console verification code
   },
 };
 
@@ -48,10 +83,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="canonical" href="https://soboards.com" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
         {children}
+        <Toaster richColors position="bottom-right" />
       </body>
     </html>
   );

@@ -1,36 +1,37 @@
-// src/app/components/BackgroundPattern.tsx
 "use client";
 import { useEffect, useState } from "react";
 
 const BackgroundPattern = () => {
-  const [isMounted, setIsMounted] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
-    console.log("BackgroundPattern mounted:", isMounted);
+    // Set mounted state after component mounts
+    setMounted(true);
+    return () => setMounted(false);
   }, []);
 
-  // Always render the div, but only apply styles after mounting
+  // Base styles that are always applied
+  const baseStyles = {
+    position: "fixed" as const,
+    inset: 0,
+    pointerEvents: "none" as const,
+    zIndex: 0,
+  };
+
+  // Pattern styles that are applied whether mounted or not
+  const patternStyles = {
+    position: "absolute" as const,
+    inset: 0,
+    backgroundImage: "radial-gradient(#94a3b8 1px, transparent 1px)",
+    backgroundSize: "40px 40px",
+    opacity: mounted ? 0.5 : 0,
+    transition: "opacity 0.3s ease-in",
+    zIndex: 0,
+  };
+
   return (
-    <div
-      aria-hidden="true"
-      className="fixed inset-0 pointer-events-none"
-      style={{ zIndex: 0 }}
-    >
-      <div
-        className="absolute inset-0"
-        style={
-          isMounted
-            ? {
-                backgroundImage:
-                  "radial-gradient(#94a3b8 1px, transparent 1px)",
-                backgroundSize: "40px 40px",
-                opacity: 0.5,
-                zIndex: 0,
-              }
-            : {}
-        }
-      />
+    <div style={baseStyles}>
+      <div style={patternStyles} />
     </div>
   );
 };
