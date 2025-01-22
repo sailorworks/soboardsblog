@@ -1,5 +1,4 @@
 import { BarChart3, Palette, Target } from "lucide-react";
-import Link from "next/link";
 
 const FeatureSection = () => {
   const features = [
@@ -37,20 +36,7 @@ const FeatureSection = () => {
             </div>
           ))}
         </div>
-        <div className="text-center">
-          <Link
-            href="/learn-more"
-            className="inline-block border border-[#D1D5DB] text-[#D1D5DB] px-6 py-2 rounded mr-4 hover:bg-purple-300 hover:text-gray-900 transition duration-300"
-          >
-            Learn More
-          </Link>
-          <Link
-            href="/sign-up"
-            className="inline-block bg-purple-300 text-gray-900 px-6 py-2 rounded hover:bg-purple-400 transition duration-300"
-          >
-            Sign Up →
-          </Link>
-        </div>
+        <div className="text-center"></div>
       </div>
     </section>
   );
