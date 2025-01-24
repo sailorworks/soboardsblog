@@ -1,5 +1,5 @@
 import Link from "next/link";
-import SoboardsLogo from "./SoBoardsLogo";
+import SoboardsLogo from "./SoBoardslogo";
 
 export default function Header() {
   return (
