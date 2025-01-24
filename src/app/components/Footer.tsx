@@ -1,5 +1,5 @@
 import Link from "next/link";
-import SoboardsLogo from "./SoBoardsLogo"; // Adjust the path if needed
+import SoboardsLogo from "./SoBoardslogo"; // Adjust the path if needed
 
 export default function Footer() {
   const footerLinks = [
