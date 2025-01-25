@@ -24,7 +24,7 @@
     "framer-motion": "^11.17.0",
     "groq": "^3.71.2",
     "lucide-react": "^0.471.0",
-    "next": "15.0.3",
+    "next": "14.2",
     "next-sanity": "^9.8.42",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -41,8 +41,8 @@
     "@types/react-dom": "^18.3.5",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.1",
-    "eslint-config-next": "^15.0.3",
+    "eslint-config-next": "^13.5.8",
     "postcss": "^8.5.1",
-    "typescript": "^5.7.3"
+    "typescript": "^5.2.2"
   }
 }
