@@ -14,6 +14,8 @@
     "@dnd-kit/modifiers": "^6.0.1",
     "@dnd-kit/sortable": "^7.0.2",
     "@floating-ui/react-dom": "^2.1.2",
+    "@fontsource/inter": "^5.1.1",
+    "@fontsource/lora": "^5.1.1",
     "@portabletext/editor": "^1.26.0",
     "@portabletext/react": "^3.2.0",
     "@sanity/icons": "^3.5.7",
