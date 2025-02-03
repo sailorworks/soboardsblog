@@ -75,22 +75,12 @@ const ContactForm = () => {
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-blue-400" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold">Phone</h3>
-                  <p className="text-gray-400">+1 (555) 123-4567</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center">
                   <MessageSquare className="w-6 h-6 text-purple-400" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold">Email</h3>
-                  <p className="text-gray-400">contact@example.com</p>
+                  <p className="text-gray-400">soboardsdev@gmail.com</p>
                 </div>
               </div>
             </div>
